@@ -54,10 +54,10 @@ def safe_int(val):
 def load_data():
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(base_dir, '../data/Kafaat_Cleaned.csv')
+    file_path = os.path.join(base_dir, '../data_clean/Kafaat_Cleaned.csv')
     
     if not os.path.exists(file_path):
-        file_path = 'data/Kafaat_Cleaned.csv'
+        file_path = 'data_clean/Kafaat_Cleaned.csv'
         
     try:
         data = pd.read_csv(file_path)
